@@ -103,11 +103,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# start starship
+eval "$(starship init zsh)"
+
+# Zsh completions for alacritty
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
 # Launch neofetch with terminal start
 echo ""
 neofetch
 echo ""
-
-# Zsh completions for alacritty
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 

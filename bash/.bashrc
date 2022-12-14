@@ -113,10 +113,14 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
-#bash autocompletions
+# bash autocompletions
 source ~/.bash_completion/alacritty
+
+# start starship
+eval "$(starship init bash)"
 
 # launch neofetch on terminal launch
 echo ""
 neofetch
 echo ""
+
