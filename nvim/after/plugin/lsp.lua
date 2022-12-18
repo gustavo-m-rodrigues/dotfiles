@@ -1,26 +1,3 @@
--- nord theme
---vim.cmd[[colorscheme nord]]
-
--- tree-sitter
-require("nvim-treesitter.configs").setup( {
-	highlight = {
-		enable = true,
-	}
-})
-
--- telescope
-require("telescope").setup{}
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-
---lualine
-require("lualine").setup( {
-	options = {
-		theme = "nord"
-	}
-})
-
---lsp
 local on_attach = function(client, bufnr)
 -- Enable completion triggered by <c-x><c-o>
 	vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
@@ -103,9 +80,3 @@ cmp.setup({
 		},
 	},
 })
-
--- neogen
-require("neogen").setup({
-	snippet_engine = "luasnip",
-})
-
