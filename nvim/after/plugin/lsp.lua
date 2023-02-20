@@ -5,7 +5,6 @@ lsp.preset("recommended")
 lsp.ensure_installed({
 	"clangd",
 	"pyright",
-	"sumneko_lua",
 	"bashls",
 })
 
