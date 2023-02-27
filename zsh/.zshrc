@@ -110,7 +110,7 @@ eval "$(starship init zsh)"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Launch neofetch with terminal start
-echo ""
-neofetch
-echo ""
+#echo ""
+#neofetch
+#echo ""
 

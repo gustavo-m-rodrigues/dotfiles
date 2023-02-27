@@ -38,7 +38,7 @@ exec --no-startup-id blueman
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Set wallpaper
-exec feh --bg-fill ~/Git\ Repos/dotfiles/wallpaper.jpg
+exec --no-startup-id feh --bg-fill ~/Git\ Repos/dotfiles/wallpaper.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_status killall -SIGUSR1 polybar
@@ -181,6 +181,6 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+s exec "i3lock -c 000000"
 
 # Program binds
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 bindsym Print exec flameshot gui
 
