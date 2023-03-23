@@ -106,11 +106,8 @@ source $ZSH/oh-my-zsh.sh
 # start starship
 eval "$(starship init zsh)"
 
-# Zsh completions for alacritty
-fpath+=${ZDOTDIR:-~}/.zsh_functions
-
 # Launch neofetch with terminal start
-#echo ""
-#neofetch
-#echo ""
+echo ""
+neofetch
+echo ""
 

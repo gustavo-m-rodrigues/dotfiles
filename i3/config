@@ -38,7 +38,10 @@ exec --no-startup-id blueman
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/Git\ Repos/dotfiles/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill ~/Git\ Repos/dotfiles/wallpaper.jpg
+
+# Start picom
+exec --no-startup-id picom -b -f
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_status killall -SIGUSR1 polybar
@@ -60,7 +63,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
-bindsym $mod+ccedila focus right
+bindsym $mod+ccedilla focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -72,7 +75,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+ccedila move right
+bindsym $mod+Shift+ccedilla move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
