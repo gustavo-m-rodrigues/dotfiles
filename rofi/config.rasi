@@ -1,4 +1,4 @@
 configuration{
 	show-icons: true;
-	font: "FiraCode 14";
+	font: "FiraCode 12";
 }

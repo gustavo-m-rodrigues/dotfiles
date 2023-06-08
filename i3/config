@@ -30,15 +30,14 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --color=000000
 
-# Start bluetooth and wifi applets
+# Start and wifi applets
 exec --no-startup-id nm-applet
-exec --no-startup-id blueman
 
 # Start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Set wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Git\ Repos/dotfiles/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/bg.jpg
 
 # Start picom
 exec --no-startup-id picom -b -f
