@@ -1,8 +1,17 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+[username]
+format = " [$user]($style)@"
+show_always = true
+style_root = "bold red"
+style_user = "bold red"
 
-add_newline = true
+[hostname]
+disabled = false
+format = "[$hostname]($style) in "
+ssh_only = false
+style = "bold dimmed red"
+trim_at = "-"
 
 [character]
-success_symbol = "[=>](bold green)"
-error_symbol = "[=>](bold red)"
+error_symbol = " [×](bold red)"
+success_symbol = " [->](bold red)"
 
