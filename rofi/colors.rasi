@@ -1,0 +1,14 @@
+/**
+ * Kanagawa based palette for rofi
+ * 
+ * palette by: https://github.com/rebelot/kanagawa.nvim
+ **/
+
+* {
+    background:     #16161D;
+    background-alt: #1F1F28;
+    foreground:     #C8C093;
+    selected:       #727169;
+    active:         #98BB6C;
+    urgent:         #E82424;
+}

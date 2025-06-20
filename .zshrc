@@ -13,6 +13,8 @@ alias ls="ls --color"
 alias ll="ls -l --color"
 alias la="ls -a --color"
 
-echo ""
-neofetch
-echo ""
+# ssh-agent envirenment variable
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+eval "$(starship init zsh)"
+
